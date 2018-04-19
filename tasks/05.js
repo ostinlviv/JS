@@ -1,5 +1,5 @@
 function converter () {
-    var cur = prompt ('What currency do you have?', '');
+    var cur = prompt ('What currency do you have USD or UAH?', '');
     var amount = +prompt ('How much ' + cur + ' do you have?', '');
     cur = cur.toUpperCase ();
     if (cur == 'USD') {

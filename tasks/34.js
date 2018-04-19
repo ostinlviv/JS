@@ -1,8 +1,8 @@
 function findDuplicates (arr) {
     var result = {};
-    for (i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         var count = 0;
-        for (j = 0; j < arr.length; j++) {
+        for (var j = 0; j < arr.length; j++) {
             if (arr[i] === arr[j]) {
                 count += 1;
             }

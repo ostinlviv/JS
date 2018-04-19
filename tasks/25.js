@@ -1,9 +1,9 @@
 function firstNotRepeatableChar() {
     var result = '';
     var string = prompt ('Input the string', '');
-    for (i = 0; i < string.length; i++) {
+    for (var i = 0; i < string.length; i++) {
         var count = 0;
-        for (j = 0; j < string.length; j++) {
+        for (var j = 0; j < string.length; j++) {
             if (string.charAt(i) === string.charAt(j)) {
                 count += 1;
             }
