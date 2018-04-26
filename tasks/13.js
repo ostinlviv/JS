@@ -4,7 +4,7 @@ function average(arr) {
         sum += arr[i];
     }
     var res = sum / arr.length;
-    return res;
+    return res.toFixed(2);
 }
 
 arr = [1, 4, 2];

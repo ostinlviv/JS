@@ -2,12 +2,15 @@ function converter () {
     var cur = prompt ('What currency do you have USD or UAH?', '');
     var amount = +prompt ('How much ' + cur + ' do you have?', '');
     cur = cur.toUpperCase ();
-    if (cur == 'USD') {
-        var result = amount * 26.23;
+    var currentUsdUah = 26.23;
+    var currentUahUsd = 25.89;
+    var result;
+    if (cur === 'USD') {
+        result = amount * currentUsdUah;
         alert ('It will be ' + result + ' UAH');
     }
-    else if (cur == 'UAH') {
-        var result = amount / 25.89;
+    else if (cur === 'UAH') {
+        result = amount / currentUahUsd;
         alert ('It will be ' + result + ' USD');
     }
     else {
